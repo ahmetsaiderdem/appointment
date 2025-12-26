@@ -15,7 +15,7 @@ public class RoleRepositoryJdbc {
     public long getRoleIdByName(String roleName){
 
         Long id=jdbc.queryForObject(
-                "SELECET id FROM roles WHERE name = ?",
+                "SELECT id FROM roles WHERE name = ?",
                 Long.class,
                 roleName
         );
